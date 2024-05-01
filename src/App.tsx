@@ -7,7 +7,7 @@ function App() {
     const [saidYes, setSaidYes] = useState(false);
     return (
         <div className="flex justify-center items-center h-screen">
-            <div className="w-1/3 bg-white bg-opacity-70 shadow px-4 py-6 rounded-xl">
+            <div className="w-[90%] md:w-1/3 bg-white bg-opacity-70 shadow px-4 py-6 rounded-xl">
                 <div className="flex items-center gap-4 justify-center mb-8">
                     {saidYes ? (
                         <img src={happyIcon} alt="happy" />
@@ -20,8 +20,9 @@ function App() {
                     )}
                 </div>
                 <div className="text-xl text-center">
-                  {saidYes ? "Tank you darling, i love my self too XXX" : "Hello! Can you awnser this hard qustion?"}
-                    
+                    {saidYes
+                        ? "Tank you darling, i love my self too XXX"
+                        : "Hello! Can you awnser this hard qustion?"}
                 </div>
                 {!saidYes && (
                     <>
