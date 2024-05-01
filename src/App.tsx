@@ -31,14 +31,14 @@ function App() {
                         <div className="flex justify-center items-center gap-2 mt-8">
                             <button
                                 style={{ fontSize: 22 - counter + "px" }}
-                                className="bg-white rounded-full px-8 py-1"
+                                className="bg-white  border-b-4 border-b-pink-600 active:border-b rounded-lg px-8 py-1 transition-all"
                                 onClick={() => setCounter((prev) => prev + 2)}
                             >
                                 no
                             </button>
                             <button
                                 style={{ fontSize: counter + 22 + "px" }}
-                                className="bg-pink-400 uppercase font-bold rounded-full px-8 py-1"
+                                className="bg-pink-400 text-white border-b-4 border-b-pink-600 active:border-b transition-all uppercase font-bold rounded-lg px-8 py-1"
                                 onClick={() => setSaidYes(true)}
                             >
                                 yes
